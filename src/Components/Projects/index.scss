@@ -1,0 +1,102 @@
+.project-page {
+  position: relative;
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+
+    p {
+      display: block;
+      font-size: 14px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      min-width: fit-content;
+      line-height: 30px;
+      padding: 30px;
+      text-align: justify;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 53px;
+      color: #ffd700;
+      font-weight: 400;
+      margin-top: 160px;
+      position: relative;
+      margin-bottom: 40px;
+      left: 10px;
+      font-family: 'IBM Plex Mono', monospace;
+
+      &::before {
+        content: '<h1>';
+        font-size: 18px;
+        position: absolute;
+        margin-top: -15px;
+        left: -10px;
+        opacity: 0.5;
+        line-height: 18px;
+        font-family: 'La Belle Aurore', cursive;
+      }
+      &::after {
+        content: '<h1>';
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        opacity: 0.5;
+        line-height: 18px;
+        margin-left: 20px;
+        bottom: -21px;
+        font-family: 'La Belle Aurore', cursive;
+      }
+    }
+  }
+  .tiles-zone {
+    background: rgba(8, 253, 216, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-top: 12%;
+    margin-right: 30px;
+    width: 54%;
+    height: 70%;
+    padding: auto;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-items: end;
+      text-align: center;
+      li {
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        a {
+          width: 88%;
+          height: 100%;
+          padding: 40px;
+          background-color: #115173;
+          margin: 13px;
+          overflow: hidden;
+          display: block;
+          position: relative;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          color: white;
+          font-size: 16px;
+          text-decoration: none;
+          border-radius: 3px;
+          &:hover {
+            transform: scale(1.06);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
